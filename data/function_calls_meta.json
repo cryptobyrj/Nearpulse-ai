@@ -1,0 +1,30 @@
+{
+  "snapshot_date": "2026-11-06",
+  "source": "bigquery-public-data.crypto_near_mainnet_us.receipt_actions",
+  "sql_file": "sql/function_calls_daily.sql",
+  "date_range_start": "2026-08-06",
+  "date_range_end": "2026-11-04",
+  "row_count": 91,
+  "exported_via": "BigQuery console, Save results as CSV (local file)",
+  "estimated_bytes_processed": "not recorded",
+  "metric_definitions": {
+    "function_call_actions": "Number of rows in receipt_actions with action_kind = FUNCTION_CALL for that block_date. One transaction can produce several actions, so this is NOT a transaction count.",
+    "distinct_contracts": "Number of distinct receipt_receiver_account_id values with at least one FUNCTION_CALL action that day. This is NOT a complete measure of active contracts.",
+    "top5_calls": "Function-call actions received by the 5 most-called receiver accounts that day."
+  },
+  "validation": {
+    "missing_dates": 0,
+    "duplicate_dates": 0,
+    "non_positive_values": 0,
+    "rows_where_top5_exceeds_total": 0
+  },
+  "summary_stats": {
+    "median_daily_function_call_actions": 1482979,
+    "median_daily_distinct_contracts": 1110,
+    "median_top5_share": "47.2%"
+  },
+  "known_observations": [
+    "2026-10-10, 2026-10-11 and 2026-10-15 had 7455968, 12700267 and 11615182 function-call actions, against a snapshot median of 1482979. The top 5 receiver accounts held 69.5%, 87.4% and 91.4% of actions on those days (snapshot median share: 47.2%). Distinct contracts on those days (1477, 1524, 1476) did not rise. Cause not verified.",
+    "Distinct receiver contracts were between 832 and 921 per day from 2026-08-06 to 2026-08-13, and between 1137 and 1523 per day from 2026-10-16 to 2026-10-31. The reason for the rise is not verified."
+  ]
+}

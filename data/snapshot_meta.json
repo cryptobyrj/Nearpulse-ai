@@ -1,0 +1,27 @@
+{
+  "project": "NEARPulse AI",
+  "snapshot_type": "Historical snapshot, not live data",
+  "snapshot_date": "2026-11-05",
+  "source": "bigquery-public-data.crypto_near_mainnet_us.transactions",
+  "sql_file": "sql/daily_metrics.sql",
+  "date_range_start": "2026-08-06",
+  "date_range_end": "2026-11-04",
+  "row_count": 91,
+  "exported_via": "BigQuery console, Save results as CSV (local file)",
+  "estimated_bytes_processed": "1.84 GB",
+  "metric_definitions": {
+    "transaction_count": "Number of rows in the transactions table for that block_date.",
+    "distinct_signers": "Number of distinct signer_account_id values among that day's transactions. This is NOT all active accounts and NOT unique users."
+  },
+  "validation": {
+    "missing_dates": 0,
+    "duplicate_dates": 0,
+    "invalid_rows": 0,
+    "rows_where_signers_exceed_transactions": 0
+  },
+  "known_observations": [
+  "Distinct signers were elevated from 2026-10-02 to 2026-10-07: 118077, 176719 (10-03), 177196 (10-04), 175774 (10-07) and 124809 (10-06) against a snapshot median of 70014. Cause not verified.",
+  "Highest daily transaction counts: 2026-09-27 (1217209), 2026-10-01 (1151492), 2026-09-28 (1129793) against a snapshot median of 691420. Cause not verified.",
+  "2026-11-03 and 2026-11-04 show a sharp rise in distinct signers versus the days before (48060 on 11-02, 72343 on 11-03, 79164 on 11-04). Cause not verified."
+]
+}

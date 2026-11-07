@@ -1,0 +1,457 @@
+[
+  {
+    "date": "2026-08-06",
+    "transactionCount": 675341,
+    "distinctSigners": 84184
+  },
+  {
+    "date": "2026-08-07",
+    "transactionCount": 656089,
+    "distinctSigners": 82269
+  },
+  {
+    "date": "2026-08-08",
+    "transactionCount": 656235,
+    "distinctSigners": 78514
+  },
+  {
+    "date": "2026-08-09",
+    "transactionCount": 637854,
+    "distinctSigners": 80418
+  },
+  {
+    "date": "2026-08-10",
+    "transactionCount": 672018,
+    "distinctSigners": 82610
+  },
+  {
+    "date": "2026-08-11",
+    "transactionCount": 660154,
+    "distinctSigners": 82799
+  },
+  {
+    "date": "2026-08-12",
+    "transactionCount": 685406,
+    "distinctSigners": 82166
+  },
+  {
+    "date": "2026-08-13",
+    "transactionCount": 664804,
+    "distinctSigners": 82572
+  },
+  {
+    "date": "2026-08-14",
+    "transactionCount": 639732,
+    "distinctSigners": 79800
+  },
+  {
+    "date": "2026-08-15",
+    "transactionCount": 584733,
+    "distinctSigners": 79812
+  },
+  {
+    "date": "2026-08-16",
+    "transactionCount": 615151,
+    "distinctSigners": 80163
+  },
+  {
+    "date": "2026-08-17",
+    "transactionCount": 669250,
+    "distinctSigners": 80576
+  },
+  {
+    "date": "2026-08-18",
+    "transactionCount": 673834,
+    "distinctSigners": 80055
+  },
+  {
+    "date": "2026-08-19",
+    "transactionCount": 733400,
+    "distinctSigners": 80931
+  },
+  {
+    "date": "2026-08-20",
+    "transactionCount": 758797,
+    "distinctSigners": 82216
+  },
+  {
+    "date": "2026-08-21",
+    "transactionCount": 786077,
+    "distinctSigners": 81667
+  },
+  {
+    "date": "2026-08-22",
+    "transactionCount": 804701,
+    "distinctSigners": 79636
+  },
+  {
+    "date": "2026-08-23",
+    "transactionCount": 726225,
+    "distinctSigners": 79394
+  },
+  {
+    "date": "2026-08-24",
+    "transactionCount": 805717,
+    "distinctSigners": 81373
+  },
+  {
+    "date": "2026-08-25",
+    "transactionCount": 719568,
+    "distinctSigners": 79464
+  },
+  {
+    "date": "2026-08-26",
+    "transactionCount": 655345,
+    "distinctSigners": 81506
+  },
+  {
+    "date": "2026-08-27",
+    "transactionCount": 681264,
+    "distinctSigners": 81525
+  },
+  {
+    "date": "2026-08-28",
+    "transactionCount": 654889,
+    "distinctSigners": 78375
+  },
+  {
+    "date": "2026-08-29",
+    "transactionCount": 594141,
+    "distinctSigners": 76934
+  },
+  {
+    "date": "2026-08-30",
+    "transactionCount": 623892,
+    "distinctSigners": 76955
+  },
+  {
+    "date": "2026-08-31",
+    "transactionCount": 684883,
+    "distinctSigners": 77790
+  },
+  {
+    "date": "2026-09-01",
+    "transactionCount": 670529,
+    "distinctSigners": 77130
+  },
+  {
+    "date": "2026-09-02",
+    "transactionCount": 659622,
+    "distinctSigners": 77127
+  },
+  {
+    "date": "2026-09-03",
+    "transactionCount": 703698,
+    "distinctSigners": 77607
+  },
+  {
+    "date": "2026-09-04",
+    "transactionCount": 735463,
+    "distinctSigners": 76042
+  },
+  {
+    "date": "2026-09-05",
+    "transactionCount": 674162,
+    "distinctSigners": 74288
+  },
+  {
+    "date": "2026-09-06",
+    "transactionCount": 763172,
+    "distinctSigners": 74652
+  },
+  {
+    "date": "2026-09-07",
+    "transactionCount": 746044,
+    "distinctSigners": 75711
+  },
+  {
+    "date": "2026-09-08",
+    "transactionCount": 704254,
+    "distinctSigners": 71768
+  },
+  {
+    "date": "2026-09-09",
+    "transactionCount": 772841,
+    "distinctSigners": 71964
+  },
+  {
+    "date": "2026-09-10",
+    "transactionCount": 728736,
+    "distinctSigners": 71159
+  },
+  {
+    "date": "2026-09-11",
+    "transactionCount": 846582,
+    "distinctSigners": 70014
+  },
+  {
+    "date": "2026-09-12",
+    "transactionCount": 651970,
+    "distinctSigners": 67170
+  },
+  {
+    "date": "2026-09-13",
+    "transactionCount": 626447,
+    "distinctSigners": 61501
+  },
+  {
+    "date": "2026-09-14",
+    "transactionCount": 706600,
+    "distinctSigners": 49972
+  },
+  {
+    "date": "2026-09-15",
+    "transactionCount": 706597,
+    "distinctSigners": 45247
+  },
+  {
+    "date": "2026-09-16",
+    "transactionCount": 777089,
+    "distinctSigners": 42517
+  },
+  {
+    "date": "2026-09-17",
+    "transactionCount": 840314,
+    "distinctSigners": 44749
+  },
+  {
+    "date": "2026-09-18",
+    "transactionCount": 973388,
+    "distinctSigners": 62965
+  },
+  {
+    "date": "2026-09-19",
+    "transactionCount": 839380,
+    "distinctSigners": 52391
+  },
+  {
+    "date": "2026-09-20",
+    "transactionCount": 846013,
+    "distinctSigners": 57466
+  },
+  {
+    "date": "2026-09-21",
+    "transactionCount": 871723,
+    "distinctSigners": 60298
+  },
+  {
+    "date": "2026-09-22",
+    "transactionCount": 971959,
+    "distinctSigners": 57797
+  },
+  {
+    "date": "2026-09-23",
+    "transactionCount": 869892,
+    "distinctSigners": 56105
+  },
+  {
+    "date": "2026-09-24",
+    "transactionCount": 741291,
+    "distinctSigners": 54027
+  },
+  {
+    "date": "2026-09-25",
+    "transactionCount": 715469,
+    "distinctSigners": 57300
+  },
+  {
+    "date": "2026-09-26",
+    "transactionCount": 603143,
+    "distinctSigners": 54118
+  },
+  {
+    "date": "2026-09-27",
+    "transactionCount": 1217209,
+    "distinctSigners": 63589
+  },
+  {
+    "date": "2026-09-28",
+    "transactionCount": 1129793,
+    "distinctSigners": 61771
+  },
+  {
+    "date": "2026-09-29",
+    "transactionCount": 987627,
+    "distinctSigners": 62990
+  },
+  {
+    "date": "2026-09-30",
+    "transactionCount": 923526,
+    "distinctSigners": 58749
+  },
+  {
+    "date": "2026-10-01",
+    "transactionCount": 1151492,
+    "distinctSigners": 62105
+  },
+  {
+    "date": "2026-10-02",
+    "transactionCount": 868026,
+    "distinctSigners": 118077
+  },
+  {
+    "date": "2026-10-03",
+    "transactionCount": 690438,
+    "distinctSigners": 176719
+  },
+  {
+    "date": "2026-10-04",
+    "transactionCount": 839450,
+    "distinctSigners": 177196
+  },
+  {
+    "date": "2026-10-05",
+    "transactionCount": 865681,
+    "distinctSigners": 95992
+  },
+  {
+    "date": "2026-10-06",
+    "transactionCount": 909765,
+    "distinctSigners": 124809
+  },
+  {
+    "date": "2026-10-07",
+    "transactionCount": 971068,
+    "distinctSigners": 175774
+  },
+  {
+    "date": "2026-10-08",
+    "transactionCount": 1014850,
+    "distinctSigners": 82447
+  },
+  {
+    "date": "2026-10-09",
+    "transactionCount": 680332,
+    "distinctSigners": 53950
+  },
+  {
+    "date": "2026-10-10",
+    "transactionCount": 850344,
+    "distinctSigners": 56881
+  },
+  {
+    "date": "2026-10-11",
+    "transactionCount": 1109584,
+    "distinctSigners": 54865
+  },
+  {
+    "date": "2026-10-12",
+    "transactionCount": 712621,
+    "distinctSigners": 59164
+  },
+  {
+    "date": "2026-10-13",
+    "transactionCount": 731054,
+    "distinctSigners": 55685
+  },
+  {
+    "date": "2026-10-14",
+    "transactionCount": 767812,
+    "distinctSigners": 58615
+  },
+  {
+    "date": "2026-10-15",
+    "transactionCount": 911980,
+    "distinctSigners": 55503
+  },
+  {
+    "date": "2026-10-16",
+    "transactionCount": 658427,
+    "distinctSigners": 54936
+  },
+  {
+    "date": "2026-10-17",
+    "transactionCount": 557903,
+    "distinctSigners": 54322
+  },
+  {
+    "date": "2026-10-18",
+    "transactionCount": 569735,
+    "distinctSigners": 51810
+  },
+  {
+    "date": "2026-10-19",
+    "transactionCount": 607019,
+    "distinctSigners": 53107
+  },
+  {
+    "date": "2026-10-20",
+    "transactionCount": 617990,
+    "distinctSigners": 52116
+  },
+  {
+    "date": "2026-10-21",
+    "transactionCount": 658784,
+    "distinctSigners": 53919
+  },
+  {
+    "date": "2026-10-22",
+    "transactionCount": 547267,
+    "distinctSigners": 51423
+  },
+  {
+    "date": "2026-10-23",
+    "transactionCount": 609236,
+    "distinctSigners": 51214
+  },
+  {
+    "date": "2026-10-24",
+    "transactionCount": 635438,
+    "distinctSigners": 50178
+  },
+  {
+    "date": "2026-10-25",
+    "transactionCount": 550250,
+    "distinctSigners": 49245
+  },
+  {
+    "date": "2026-10-26",
+    "transactionCount": 573801,
+    "distinctSigners": 49601
+  },
+  {
+    "date": "2026-10-27",
+    "transactionCount": 604320,
+    "distinctSigners": 61855
+  },
+  {
+    "date": "2026-10-28",
+    "transactionCount": 520096,
+    "distinctSigners": 49273
+  },
+  {
+    "date": "2026-10-29",
+    "transactionCount": 649103,
+    "distinctSigners": 49292
+  },
+  {
+    "date": "2026-10-30",
+    "transactionCount": 691420,
+    "distinctSigners": 47349
+  },
+  {
+    "date": "2026-10-31",
+    "transactionCount": 502649,
+    "distinctSigners": 46019
+  },
+  {
+    "date": "2026-11-01",
+    "transactionCount": 509345,
+    "distinctSigners": 46478
+  },
+  {
+    "date": "2026-11-02",
+    "transactionCount": 522358,
+    "distinctSigners": 48060
+  },
+  {
+    "date": "2026-11-03",
+    "transactionCount": 597189,
+    "distinctSigners": 72343
+  },
+  {
+    "date": "2026-11-04",
+    "transactionCount": 706690,
+    "distinctSigners": 79164
+  }
+]

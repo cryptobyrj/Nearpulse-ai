@@ -1,0 +1,548 @@
+[
+  {
+    "date": "2026-08-06",
+    "functionCallActions": 1288716,
+    "distinctContracts": 910,
+    "top5Calls": 644637
+  },
+  {
+    "date": "2026-08-07",
+    "functionCallActions": 1246430,
+    "distinctContracts": 921,
+    "top5Calls": 610967
+  },
+  {
+    "date": "2026-08-08",
+    "functionCallActions": 1272458,
+    "distinctContracts": 844,
+    "top5Calls": 638170
+  },
+  {
+    "date": "2026-08-09",
+    "functionCallActions": 1235471,
+    "distinctContracts": 832,
+    "top5Calls": 623045
+  },
+  {
+    "date": "2026-08-10",
+    "functionCallActions": 1317665,
+    "distinctContracts": 910,
+    "top5Calls": 636831
+  },
+  {
+    "date": "2026-08-11",
+    "functionCallActions": 1297579,
+    "distinctContracts": 901,
+    "top5Calls": 636564
+  },
+  {
+    "date": "2026-08-12",
+    "functionCallActions": 1345487,
+    "distinctContracts": 885,
+    "top5Calls": 656906
+  },
+  {
+    "date": "2026-08-13",
+    "functionCallActions": 1267481,
+    "distinctContracts": 861,
+    "top5Calls": 630153
+  },
+  {
+    "date": "2026-08-14",
+    "functionCallActions": 1242575,
+    "distinctContracts": 932,
+    "top5Calls": 610038
+  },
+  {
+    "date": "2026-08-15",
+    "functionCallActions": 1096047,
+    "distinctContracts": 837,
+    "top5Calls": 573227
+  },
+  {
+    "date": "2026-08-16",
+    "functionCallActions": 1189783,
+    "distinctContracts": 828,
+    "top5Calls": 597847
+  },
+  {
+    "date": "2026-08-17",
+    "functionCallActions": 1334574,
+    "distinctContracts": 886,
+    "top5Calls": 627362
+  },
+  {
+    "date": "2026-08-18",
+    "functionCallActions": 1363468,
+    "distinctContracts": 872,
+    "top5Calls": 643167
+  },
+  {
+    "date": "2026-08-19",
+    "functionCallActions": 1501029,
+    "distinctContracts": 913,
+    "top5Calls": 670014
+  },
+  {
+    "date": "2026-08-20",
+    "functionCallActions": 1580697,
+    "distinctContracts": 948,
+    "top5Calls": 655139
+  },
+  {
+    "date": "2026-08-21",
+    "functionCallActions": 1753630,
+    "distinctContracts": 939,
+    "top5Calls": 639561
+  },
+  {
+    "date": "2026-08-22",
+    "functionCallActions": 1797803,
+    "distinctContracts": 891,
+    "top5Calls": 689504
+  },
+  {
+    "date": "2026-08-23",
+    "functionCallActions": 1664141,
+    "distinctContracts": 891,
+    "top5Calls": 640492
+  },
+  {
+    "date": "2026-08-24",
+    "functionCallActions": 1843977,
+    "distinctContracts": 960,
+    "top5Calls": 719901
+  },
+  {
+    "date": "2026-08-25",
+    "functionCallActions": 1635431,
+    "distinctContracts": 949,
+    "top5Calls": 703491
+  },
+  {
+    "date": "2026-08-26",
+    "functionCallActions": 1458843,
+    "distinctContracts": 931,
+    "top5Calls": 656576
+  },
+  {
+    "date": "2026-08-27",
+    "functionCallActions": 1505839,
+    "distinctContracts": 915,
+    "top5Calls": 668519
+  },
+  {
+    "date": "2026-08-28",
+    "functionCallActions": 1445736,
+    "distinctContracts": 972,
+    "top5Calls": 669006
+  },
+  {
+    "date": "2026-08-29",
+    "functionCallActions": 1271728,
+    "distinctContracts": 860,
+    "top5Calls": 633867
+  },
+  {
+    "date": "2026-08-30",
+    "functionCallActions": 1363175,
+    "distinctContracts": 877,
+    "top5Calls": 645868
+  },
+  {
+    "date": "2026-08-31",
+    "functionCallActions": 1513307,
+    "distinctContracts": 922,
+    "top5Calls": 705607
+  },
+  {
+    "date": "2026-09-01",
+    "functionCallActions": 1482979,
+    "distinctContracts": 940,
+    "top5Calls": 699856
+  },
+  {
+    "date": "2026-09-02",
+    "functionCallActions": 1465703,
+    "distinctContracts": 949,
+    "top5Calls": 698307
+  },
+  {
+    "date": "2026-09-03",
+    "functionCallActions": 1561844,
+    "distinctContracts": 1012,
+    "top5Calls": 714403
+  },
+  {
+    "date": "2026-09-04",
+    "functionCallActions": 1621653,
+    "distinctContracts": 1003,
+    "top5Calls": 736802
+  },
+  {
+    "date": "2026-09-05",
+    "functionCallActions": 1439118,
+    "distinctContracts": 924,
+    "top5Calls": 690431
+  },
+  {
+    "date": "2026-09-06",
+    "functionCallActions": 1652588,
+    "distinctContracts": 939,
+    "top5Calls": 763395
+  },
+  {
+    "date": "2026-09-07",
+    "functionCallActions": 1561408,
+    "distinctContracts": 996,
+    "top5Calls": 754663
+  },
+  {
+    "date": "2026-09-08",
+    "functionCallActions": 1418197,
+    "distinctContracts": 1018,
+    "top5Calls": 723154
+  },
+  {
+    "date": "2026-09-09",
+    "functionCallActions": 1576426,
+    "distinctContracts": 1038,
+    "top5Calls": 788610
+  },
+  {
+    "date": "2026-09-10",
+    "functionCallActions": 1466094,
+    "distinctContracts": 948,
+    "top5Calls": 750577
+  },
+  {
+    "date": "2026-09-11",
+    "functionCallActions": 1718119,
+    "distinctContracts": 959,
+    "top5Calls": 856356
+  },
+  {
+    "date": "2026-09-12",
+    "functionCallActions": 1258232,
+    "distinctContracts": 864,
+    "top5Calls": 675312
+  },
+  {
+    "date": "2026-09-13",
+    "functionCallActions": 1216652,
+    "distinctContracts": 890,
+    "top5Calls": 648382
+  },
+  {
+    "date": "2026-09-14",
+    "functionCallActions": 1368969,
+    "distinctContracts": 982,
+    "top5Calls": 743705
+  },
+  {
+    "date": "2026-09-15",
+    "functionCallActions": 1382976,
+    "distinctContracts": 957,
+    "top5Calls": 720466
+  },
+  {
+    "date": "2026-09-16",
+    "functionCallActions": 1508144,
+    "distinctContracts": 937,
+    "top5Calls": 799040
+  },
+  {
+    "date": "2026-09-17",
+    "functionCallActions": 1709873,
+    "distinctContracts": 1016,
+    "top5Calls": 851564
+  },
+  {
+    "date": "2026-09-18",
+    "functionCallActions": 2027484,
+    "distinctContracts": 1731,
+    "top5Calls": 1014283
+  },
+  {
+    "date": "2026-09-19",
+    "functionCallActions": 1627986,
+    "distinctContracts": 1096,
+    "top5Calls": 789022
+  },
+  {
+    "date": "2026-09-20",
+    "functionCallActions": 1723611,
+    "distinctContracts": 1061,
+    "top5Calls": 823086
+  },
+  {
+    "date": "2026-09-21",
+    "functionCallActions": 1965380,
+    "distinctContracts": 1195,
+    "top5Calls": 868703
+  },
+  {
+    "date": "2026-09-22",
+    "functionCallActions": 2027982,
+    "distinctContracts": 1410,
+    "top5Calls": 938127
+  },
+  {
+    "date": "2026-09-23",
+    "functionCallActions": 1944844,
+    "distinctContracts": 1499,
+    "top5Calls": 944401
+  },
+  {
+    "date": "2026-09-24",
+    "functionCallActions": 1655622,
+    "distinctContracts": 1341,
+    "top5Calls": 782102
+  },
+  {
+    "date": "2026-09-25",
+    "functionCallActions": 1669045,
+    "distinctContracts": 1529,
+    "top5Calls": 765275
+  },
+  {
+    "date": "2026-09-26",
+    "functionCallActions": 1356625,
+    "distinctContracts": 1431,
+    "top5Calls": 602911
+  },
+  {
+    "date": "2026-09-27",
+    "functionCallActions": 2677000,
+    "distinctContracts": 2941,
+    "top5Calls": 1429034
+  },
+  {
+    "date": "2026-09-28",
+    "functionCallActions": 2657692,
+    "distinctContracts": 2984,
+    "top5Calls": 1303492
+  },
+  {
+    "date": "2026-09-29",
+    "functionCallActions": 2259512,
+    "distinctContracts": 2419,
+    "top5Calls": 1079963
+  },
+  {
+    "date": "2026-09-30",
+    "functionCallActions": 1955532,
+    "distinctContracts": 2822,
+    "top5Calls": 894187
+  },
+  {
+    "date": "2026-10-01",
+    "functionCallActions": 2190586,
+    "distinctContracts": 2266,
+    "top5Calls": 976798
+  },
+  {
+    "date": "2026-10-02",
+    "functionCallActions": 1670797,
+    "distinctContracts": 2043,
+    "top5Calls": 789269
+  },
+  {
+    "date": "2026-10-03",
+    "functionCallActions": 1214146,
+    "distinctContracts": 1967,
+    "top5Calls": 546531
+  },
+  {
+    "date": "2026-10-04",
+    "functionCallActions": 1416969,
+    "distinctContracts": 1901,
+    "top5Calls": 688393
+  },
+  {
+    "date": "2026-10-05",
+    "functionCallActions": 1607626,
+    "distinctContracts": 2032,
+    "top5Calls": 774949
+  },
+  {
+    "date": "2026-10-06",
+    "functionCallActions": 1628101,
+    "distinctContracts": 1784,
+    "top5Calls": 811229
+  },
+  {
+    "date": "2026-10-07",
+    "functionCallActions": 1681338,
+    "distinctContracts": 1701,
+    "top5Calls": 828526
+  },
+  {
+    "date": "2026-10-08",
+    "functionCallActions": 2239702,
+    "distinctContracts": 2052,
+    "top5Calls": 1098773
+  },
+  {
+    "date": "2026-10-09",
+    "functionCallActions": 1481380,
+    "distinctContracts": 1753,
+    "top5Calls": 647930
+  },
+  {
+    "date": "2026-10-10",
+    "functionCallActions": 7455968,
+    "distinctContracts": 1477,
+    "top5Calls": 5183162
+  },
+  {
+    "date": "2026-10-11",
+    "functionCallActions": 12700267,
+    "distinctContracts": 1524,
+    "top5Calls": 11099121
+  },
+  {
+    "date": "2026-10-12",
+    "functionCallActions": 2005834,
+    "distinctContracts": 1671,
+    "top5Calls": 870855
+  },
+  {
+    "date": "2026-10-13",
+    "functionCallActions": 2465902,
+    "distinctContracts": 1442,
+    "top5Calls": 777617
+  },
+  {
+    "date": "2026-10-14",
+    "functionCallActions": 2065158,
+    "distinctContracts": 1809,
+    "top5Calls": 800404
+  },
+  {
+    "date": "2026-10-15",
+    "functionCallActions": 11615182,
+    "distinctContracts": 1476,
+    "top5Calls": 10621717
+  },
+  {
+    "date": "2026-10-16",
+    "functionCallActions": 1525314,
+    "distinctContracts": 1523,
+    "top5Calls": 704491
+  },
+  {
+    "date": "2026-10-17",
+    "functionCallActions": 1424254,
+    "distinctContracts": 1448,
+    "top5Calls": 552259
+  },
+  {
+    "date": "2026-10-18",
+    "functionCallActions": 1322272,
+    "distinctContracts": 1410,
+    "top5Calls": 592807
+  },
+  {
+    "date": "2026-10-19",
+    "functionCallActions": 1386885,
+    "distinctContracts": 1451,
+    "top5Calls": 631483
+  },
+  {
+    "date": "2026-10-20",
+    "functionCallActions": 1432824,
+    "distinctContracts": 1466,
+    "top5Calls": 682742
+  },
+  {
+    "date": "2026-10-21",
+    "functionCallActions": 1515296,
+    "distinctContracts": 1456,
+    "top5Calls": 693739
+  },
+  {
+    "date": "2026-10-22",
+    "functionCallActions": 1317955,
+    "distinctContracts": 1376,
+    "top5Calls": 593226
+  },
+  {
+    "date": "2026-10-23",
+    "functionCallActions": 1407250,
+    "distinctContracts": 1412,
+    "top5Calls": 642482
+  },
+  {
+    "date": "2026-10-24",
+    "functionCallActions": 1356169,
+    "distinctContracts": 1244,
+    "top5Calls": 569713
+  },
+  {
+    "date": "2026-10-25",
+    "functionCallActions": 1195350,
+    "distinctContracts": 1193,
+    "top5Calls": 487709
+  },
+  {
+    "date": "2026-10-26",
+    "functionCallActions": 1313890,
+    "distinctContracts": 1354,
+    "top5Calls": 573042
+  },
+  {
+    "date": "2026-10-27",
+    "functionCallActions": 1344593,
+    "distinctContracts": 1317,
+    "top5Calls": 537102
+  },
+  {
+    "date": "2026-10-28",
+    "functionCallActions": 1347637,
+    "distinctContracts": 1465,
+    "top5Calls": 545231
+  },
+  {
+    "date": "2026-10-29",
+    "functionCallActions": 1508176,
+    "distinctContracts": 1418,
+    "top5Calls": 694827
+  },
+  {
+    "date": "2026-10-30",
+    "functionCallActions": 1565147,
+    "distinctContracts": 1450,
+    "top5Calls": 699790
+  },
+  {
+    "date": "2026-10-31",
+    "functionCallActions": 1050572,
+    "distinctContracts": 1137,
+    "top5Calls": 476134
+  },
+  {
+    "date": "2026-11-01",
+    "functionCallActions": 1098118,
+    "distinctContracts": 1110,
+    "top5Calls": 488738
+  },
+  {
+    "date": "2026-11-02",
+    "functionCallActions": 1085927,
+    "distinctContracts": 1270,
+    "top5Calls": 478195
+  },
+  {
+    "date": "2026-11-03",
+    "functionCallActions": 1236152,
+    "distinctContracts": 1231,
+    "top5Calls": 560775
+  },
+  {
+    "date": "2026-11-04",
+    "functionCallActions": 1482952,
+    "distinctContracts": 1303,
+    "top5Calls": 680765
+  }
+]
