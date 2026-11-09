@@ -78,3 +78,31 @@ src/lib/    metrics, report, Ask logic, tests
 ## Limitations
 
 See `THESIS.md` and the Research Reports page. In short: 91 days only, distinct signers is not unique users, several spikes have unverified causes, and the data is a snapshot.
+
+
+## Live demo and how to try it
+
+Live app: https://nearpulse-ai.vercel.app
+
+1. Open Network Pulse. You should see four cards: last 7 days, transactions 596,965 (+3.4%) and distinct signers 55,529 (+7.1%); last 30 days, transactions 684,948 (-17.7%) and distinct signers 61,647 (-13.4%).
+2. Open Data Explorer. Copy a SQL query into the BigQuery console, run it, and compare with the CSV files in `data/`.
+3. Open Ask NEAR AI and ask: `Which day had the highest signers?` The answer should be 2026-10-04 with 177,196 distinct signers, and it should say the cause is not verified.
+4. Ask in Hinglish: `4 Oct ko signers itne kyun the?` The answer should come in Hinglish.
+5. Open Research Reports and download the Markdown file.
+6. Locally, run `npx vitest run`. You should see 7 tests passed.
+
+## How Ask NEAR AI works
+
+The live app sends each question to an OpenAI-compatible model on NEAR AI Cloud, together with a list of verified metrics from the snapshots. After the model answers, the app checks that every number in the answer appears in that list. If a number does not match, the model answer is dropped and a built-in explanation is shown instead. Price questions never reach the model. A simple rate limit also falls back to the built-in mode. Each answer shows which mode produced it.
+
+## Built with
+
+Next.js, React, TypeScript, Tailwind CSS, Recharts, Vitest. The data comes from the public NEAR dataset in Google BigQuery. The AI model runs through NEAR AI Cloud.
+
+## AI assistance disclosure
+
+This project was built by one person with an AI coding assistant (Claude by Anthropic). The assistant helped write the code, SQL and documentation. The BigQuery queries were run by the author, who checked the results against the CSV files and the tests.
+
+## License
+
+MIT, see `LICENSE`.
