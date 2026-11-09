@@ -21,5 +21,9 @@ export async function POST(req: Request) {
     );
   }
 
-  return Response.json(await answerQuestion(question));
+  const ip = (req.headers.get("x-forwarded-for") ?? "unknown")
+    .split(",")[0]
+    .trim();
+
+  return Response.json(await answerQuestion(question, ip));
 }
