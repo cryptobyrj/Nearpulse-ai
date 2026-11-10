@@ -1,6 +1,7 @@
 import { dailyRows, functionCallRows, meta } from "./data";
 import fcMeta from "../../data/function_calls_meta.json";
 import { compareWindows } from "./metrics";
+import spikeRows from "../../data/spike_days_top5.json";
 
 export type ReportSection = {
   title: string;
@@ -80,7 +81,15 @@ export function buildReport(): Report {
         `${d}: ${fmt(fcRow(d).functionCallActions)} actions, top 5 receivers held ${top5Share(d).toFixed(1)}%, ${fmt(fcRow(d).distinctContracts)} distinct receiver contracts`
     )
     .join("; ");
-
+  
+  
+    const spikeTop = ["2026-10-10", "2026-10-11", "2026-10-15"]
+    .map((d) => {
+      const r = spikeRows.find((x) => x.date === d && x.rank === 1);
+      if (!r) throw new Error(`Missing spike row for ${d}`);
+      return `${d}: ${r.account} held ${r.sharePct}% (${fmt(r.calls)} of ${fmt(r.dayTotal)} actions)`;
+    })
+    .join("; ");
   const sgDates = ["2026-10-03", "2026-10-04", "2026-10-07"];
   const sgText = sgDates
     .map((d) => `${d} (${fmt(dayRow(d).distinctSigners)})`)
@@ -117,6 +126,7 @@ export function buildReport(): Report {
           `Latest 30 days: average daily transactions fell ${absPct(tx30.changePct)} (${fmt(tx30.previousAvg)} to ${fmt(tx30.currentAvg)}) and average daily distinct signers fell ${absPct(sg30.changePct)} (${fmt(sg30.previousAvg)} to ${fmt(sg30.currentAvg)}).`,
           `The latest 7-day averages are below the 91-day medians: signers ${fmt(sg7.currentAvg)} against a median of ${fmt(medSg)}, transactions ${fmt(tx7.currentAvg)} against a median of ${fmt(medTx)}.`,
           `Concentration: on three days the top 5 receiver accounts took most function-call actions, and distinct receiver contracts did not rise on those days. ${spikeText}. Snapshot medians: ${fmt(medFc)} actions per day, top-5 share ${medShare.toFixed(1)}%.`,
+          `On each of those three days one receiver account took the largest share: ${spikeTop}. The top-5 share was therefore driven mostly by one account per day. What these accounts are, and why they received so many calls, was not investigated.`,
           `Distinct signers were unusually high on several days in early October, for example ${sgText}, against a snapshot median of ${fmt(medSg)}. The cause is not verified, so it is unknown whether this reflects broader participation.`,
         ],
       },
@@ -165,7 +175,7 @@ export function buildReport(): Report {
         bullets: [
           "NEAR public dataset in Google BigQuery: bigquery-public-data.crypto_near_mainnet_us (documentation: https://docs.near.org/data-infrastructure/big-query).",
           `Tables used: ${meta.source} and ${fcMeta.source}.`,
-          `SQL: ${meta.sql_file} and ${fcMeta.sql_file}. See the Data Explorer page to reproduce.`,
+          `SQL: ${meta.sql_file}, ${fcMeta.sql_file} and sql/spike_days_top5.sql. See the Data Explorer page to reproduce.`,
         ],
       },
     ],
