@@ -29,6 +29,7 @@ Mixed. On this evidence the hypothesis is neither confirmed nor rejected.
 - Historical snapshots, not live data. Transactions and signers snapshot taken 2026-11-05; function calls snapshot taken 2026-11-06.
 - Only 91 days are covered.
 - The latest 7-day window includes 2026-11-03 and 2026-11-04, when distinct signers jumped (48,060 on 11-02, 72,343 on 11-03, 79,164 on 11-04). The other 5 days of that window averaged 47,440 signers per day, below the 51,827 of the previous 7 days. The cause of the jump is not verified, so the +7.1% change should be read with caution.
+- Without 2026-11-03 and 2026-11-04, the other 5 days of the latest 7-day window averaged 574,975 transactions per day, against 577,201 in the previous 7 days. The +3.4% change in transactions therefore also depends on those two days.
 - Distinct signers is not unique users and not all active accounts.
 - Function-call actions count actions, not transactions. One transaction can create several actions, so the two counts are not directly comparable.
 - The causes of the October signer elevation and of the 10, 11 and 15 October function-call spikes were not investigated.

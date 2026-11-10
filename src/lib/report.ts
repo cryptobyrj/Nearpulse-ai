@@ -70,6 +70,8 @@ export function buildReport(): Report {
   const last7Early = dailyRows.slice(-7).filter((r) => r.date < "2026-11-03");
   const last7EarlyAvg =
     last7Early.reduce((s, r) => s + r.distinctSigners, 0) / last7Early.length;
+      const last7EarlyTxAvg =
+    last7Early.reduce((s, r) => s + r.transactionCount, 0) / last7Early.length;
 
   const spikeDates = ["2026-10-10", "2026-10-11", "2026-10-15"];
   const spikeText = spikeDates
@@ -107,8 +109,7 @@ export function buildReport(): Report {
         bullets: [
           `Latest week: average daily distinct signers rose ${absPct(sg7.changePct)} (${fmt(sg7.previousAvg)} to ${fmt(sg7.currentAvg)}), faster than transactions (${pct(tx7.changePct)}), comparing ${sg7.currentRange} with ${sg7.previousRange}. This rise depends on the last two days of the window; see Data limitations.`,
           `Distinct receiver contracts with at least one function-call action were between ${earlyAug.min} and ${earlyAug.max} per day from 2026-08-06 to 2026-08-13, and between ${lateOct.min} and ${lateOct.max} per day from 2026-10-16 to 2026-10-31. The reason for the rise is not verified.`,
-          `Over the same latest week, transactions and signers moved in the same direction, so the increase is not visible in only one of the two metrics.`,
-        ],
+          `Transactions and distinct signers both rose in the latest week (${pct(tx7.changePct)} and ${pct(sg7.changePct)}), but both rises depend on 2026-11-03 and 2026-11-04. Without those two days, the other ${last7Early.length} days averaged ${fmt(last7EarlyTxAvg)} transactions per day against ${fmt(tx7.previousAvg)} in the previous 7 days.`,        ],
       },
       {
         title: "Evidence against the hypothesis",
