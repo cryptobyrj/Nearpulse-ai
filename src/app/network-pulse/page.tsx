@@ -78,6 +78,12 @@ export default function NetworkPulsePage() {
       <section className="mt-10 rounded-xl border border-slate-800 bg-slate-900/60 p-5">
         <h2 className="text-lg font-medium text-white">Daily trend</h2>
         <TrendChart rows={dailyRows} />
+                <p className="mt-3 text-sm text-slate-400">
+          Each point is one day. The cyan line (left axis) is the number of
+          transactions. The violet line (right axis) is the number of distinct
+          accounts that signed at least one transaction that day, which is not
+          the same as unique users.
+        </p>
       </section>
 
       <section className="mt-10 rounded-xl border border-slate-800 bg-slate-900/60 p-5">
@@ -90,6 +96,13 @@ export default function NetworkPulsePage() {
           transaction count above.
         </p>
         <FunctionCallChart rows={functionCallRows} />
+                <p className="mt-3 text-sm text-slate-400">
+          Each point is one day. The cyan line (left axis, in millions) is the
+          number of function-call actions. The violet line (right axis) is the
+          number of distinct receiver contracts. On 10, 11 and 15 October a few
+          receiver accounts took most of the actions while the number of
+          distinct contracts did not rise. The cause is not verified.
+        </p>
       </section>
 
       <section className="mt-10 rounded-xl border border-slate-800 bg-slate-900/60 p-5 text-sm text-slate-300">
