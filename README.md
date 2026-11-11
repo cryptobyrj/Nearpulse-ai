@@ -106,3 +106,11 @@ This project was built by one person with an AI coding assistant (Claude by Anth
 ## License
 
 MIT, see `LICENSE`.
+
+## Refresh the snapshot
+
+1. Edit the date range in `sql/daily_metrics.sql` and `sql/function_calls_daily.sql`. Use only complete days.
+2. Run each query in the BigQuery console, check the "This query will process" estimate first, and save the results as CSV into `data/`.
+3. Run `node scripts/csv-to-json.js` and `node scripts/fc-csv-to-json.js`, then `node scripts/check-data.js`.
+4. Update the dates and notes in `data/snapshot_meta.json` and `data/function_calls_meta.json`.
+5. The report, Overview and Network Pulse recalculate from the data files. Review the hand-written spike notes and `THESIS.md`, because they name specific dates.

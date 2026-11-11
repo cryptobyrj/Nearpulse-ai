@@ -67,6 +67,20 @@ export function buildReport(): Report {
 
   const earlyAug = contractRange("2026-08-06", "2026-08-13");
   const lateOct = contractRange("2026-10-16", "2026-10-31");
+    const shareOf = (r: { top5Calls: number; functionCallActions: number }) =>
+    (r.top5Calls / r.functionCallActions) * 100;
+  const shareFirst30 = median(functionCallRows.slice(0, 30).map(shareOf));
+  const shareLast30 = median(functionCallRows.slice(-30).map(shareOf));
+  const spikeSet = new Set(["2026-10-10", "2026-10-11", "2026-10-15"]);
+  const shareExSpikes = median(
+    functionCallRows.filter((r) => !spikeSet.has(r.date)).map(shareOf)
+  );
+  const contractsFirst30 = median(
+    functionCallRows.slice(0, 30).map((r) => r.distinctContracts)
+  );
+  const contractsLast30 = median(
+    functionCallRows.slice(-30).map((r) => r.distinctContracts)
+  );
 
   const last7Early = dailyRows.slice(-7).filter((r) => r.date < "2026-11-03");
   const last7EarlyAvg =
@@ -127,7 +141,9 @@ export function buildReport(): Report {
           `The latest 7-day averages are below the 91-day medians: signers ${fmt(sg7.currentAvg)} against a median of ${fmt(medSg)}, transactions ${fmt(tx7.currentAvg)} against a median of ${fmt(medTx)}.`,
           `Concentration: on three days the top 5 receiver accounts took most function-call actions, and distinct receiver contracts did not rise on those days. ${spikeText}. Snapshot medians: ${fmt(medFc)} actions per day, top-5 share ${medShare.toFixed(1)}%.`,
           `On each of those three days one receiver account took the largest share: ${spikeTop}. The top-5 share was therefore driven mostly by one account per day. What these accounts are, and why they received so many calls, was not investigated.`,
+          `Concentration did not fall outside the spikes: the median daily top-5 receiver share was ${shareFirst30.toFixed(1)}% in the first 30 days of the snapshot and ${shareLast30.toFixed(1)}% in the last 30 days, and ${shareExSpikes.toFixed(1)}% across all days except the three spike days. Over the same periods the median number of distinct receiver contracts per day went from ${fmt(contractsFirst30)} to ${fmt(contractsLast30)}. More receivers did not translate into a clearly lower top-5 share, and the reason for the rise in receivers is not verified.`,
           `Distinct signers were unusually high on several days in early October, for example ${sgText}, against a snapshot median of ${fmt(medSg)}. The cause is not verified, so it is unknown whether this reflects broader participation.`,
+          
         ],
       },
       {

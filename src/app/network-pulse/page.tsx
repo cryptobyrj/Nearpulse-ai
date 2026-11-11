@@ -1,5 +1,6 @@
 import DayPicker from "@/components/DayPicker";
 import FunctionCallChart from "@/components/FunctionCallChart";
+import ShareChart from "@/components/ShareChart";
 import Reveal from "@/components/Reveal";
 import TrendChart from "@/components/TrendChart";
 import { dailyRows, functionCallRows, meta } from "@/lib/data";
@@ -176,7 +177,21 @@ export default function NetworkPulsePage() {
             </p>
           </section>
         </Reveal>
-
+        <Reveal>
+          <section className="glass p-5">
+            <h2 className="text-lg font-medium text-white">
+              How concentrated is function-call activity?
+            </h2>
+            <p className="mt-1 text-sm text-slate-400">
+              The share of each day&apos;s function-call actions that went to the
+              five most-called receiver accounts. A falling line would point to
+              broadening. Spikes mean a few accounts dominated that day.
+            </p>
+            <div className="mt-3">
+              <ShareChart rows={functionCallRows} />
+            </div>
+          </section>
+        </Reveal>
         <Reveal>
           <section className="glass p-5">
             <h2 className="text-lg font-medium text-white">Explore a single day</h2>

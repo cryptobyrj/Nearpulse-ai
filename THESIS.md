@@ -23,6 +23,7 @@ Mixed. On this evidence the hypothesis is neither confirmed nor rejected.
 - The latest 7-day averages are below the 91-day medians: signers 55,529 against a median of 70,014, transactions 596,965 against a median of 691,420.
 - On 2026-10-10, 2026-10-11 and 2026-10-15, function-call actions were 7,455,968, 12,700,267 and 11,615,182 against a median of 1,482,979 per day. The top 5 receiver accounts held 69.5%, 87.4% and 91.4% of actions on those days (snapshot median share: 47.2%), and distinct receiver contracts did not rise (1,477, 1,524, 1,476).
 - On those three days one receiver account took the largest share of function-call actions: `cooldogsclub.near` held 30.5% (2026-10-10) and 67.3% (2026-10-11), and `embr.playember_reserve.near` held 85.2% (2026-10-15). What these accounts are, and why they received so many calls, was not investigated.
+- Outside the spike days, concentration was flat: the median top-5 receiver share was 47.2% in the first 30 days and 45.2% in the last 30 days (46.8% excluding the three spike days), while the median number of distinct receiver contracts per day rose from about 912 to 1,449. The reason for the rise in receivers is not verified.
 - Distinct signers were unusually high on several days in early October (for example 176,719 on 2026-10-03 and 177,196 on 2026-10-04) against a median of 70,014. The cause is not verified.
 
 ## Limitations
