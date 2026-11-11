@@ -19,9 +19,10 @@ export default function CursorGlow() {
     let ty = y;
 
     const step = () => {
-      x += (tx - x) * 0.16;
-      y += (ty - y) * 0.16;
-      el.style.transform = `translate3d(${x - 180}px, ${y - 180}px, 0)`;
+      x += (tx - x) * 0.18;
+      y += (ty - y) * 0.18;
+      el.style.setProperty("--mx", `${x}px`);
+      el.style.setProperty("--my", `${y}px`);
       if (Math.abs(tx - x) > 0.5 || Math.abs(ty - y) > 0.5) {
         raf = requestAnimationFrame(step);
       } else {
@@ -51,11 +52,7 @@ export default function CursorGlow() {
     <div
       ref={ref}
       aria-hidden="true"
-      className="pointer-events-none fixed left-0 top-0 -z-10 h-[360px] w-[360px] rounded-full opacity-0 transition-opacity duration-500"
-      style={{
-        background:
-          "radial-gradient(circle, rgba(0,236,151,0.16) 0%, rgba(0,236,151,0.05) 42%, transparent 70%)",
-      }}
+      className="grid-spot pointer-events-none fixed inset-0 -z-10 opacity-0 transition-opacity duration-500"
     />
   );
 }

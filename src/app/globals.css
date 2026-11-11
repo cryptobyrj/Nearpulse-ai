@@ -170,3 +170,15 @@ a.rounded-xl:hover {
 @media (prefers-reduced-motion: reduce) {
   .typing-dot, .fade-in { animation: none !important; }
 }
+
+
+/* Grid spotlight: the grid lights up around the cursor */
+.grid-spot {
+  background-image:
+    radial-gradient(180px circle at var(--mx, 50%) var(--my, 30%), rgba(0, 236, 151, 0.07), transparent 100%),
+    linear-gradient(rgba(0, 236, 151, 0.6) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 236, 151, 0.6) 1px, transparent 1px);
+  background-size: auto, 44px 44px, 44px 44px;
+  -webkit-mask-image: radial-gradient(220px circle at var(--mx, 50%) var(--my, 30%), #000 0%, transparent 100%);
+  mask-image: radial-gradient(220px circle at var(--mx, 50%) var(--my, 30%), #000 0%, transparent 100%);
+}

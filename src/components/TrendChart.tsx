@@ -6,6 +6,7 @@ import {
   Legend,
   Line,
   LineChart,
+  ReferenceLine,
   ResponsiveContainer,
   Tooltip,
   XAxis,
@@ -13,6 +14,8 @@ import {
 } from "recharts";
 import type { DailyRow } from "@/lib/metrics";
 import RangeTabs, { type Range } from "./RangeTabs";
+
+const MARKS = ["2026-09-27", "2026-10-04", "2026-11-03"];
 
 export default function TrendChart({ rows }: { rows: DailyRow[] }) {
   const [range, setRange] = useState<Range>(91);
@@ -22,6 +25,7 @@ export default function TrendChart({ rows }: { rows: DailyRow[] }) {
   }
 
   const shown = rows.slice(-range);
+  const marks = MARKS.filter((d) => shown.some((r) => r.date === d));
 
   return (
     <div>
@@ -30,7 +34,7 @@ export default function TrendChart({ rows }: { rows: DailyRow[] }) {
       </div>
       <div className="h-80 w-full">
         <ResponsiveContainer width="100%" height="100%">
-          <LineChart data={shown} margin={{ top: 8, right: 16, left: 0, bottom: 0 }}>
+          <LineChart data={shown} margin={{ top: 22, right: 16, left: 0, bottom: 0 }}>
             <CartesianGrid stroke="#1e293b" strokeDasharray="3 3" />
             <XAxis dataKey="date" stroke="#64748b" fontSize={12} minTickGap={32} />
             <YAxis
@@ -55,6 +59,17 @@ export default function TrendChart({ rows }: { rows: DailyRow[] }) {
               formatter={(value) => Number(value).toLocaleString("en-US")}
             />
             <Legend />
+            {marks.map((d) => (
+              <ReferenceLine
+                key={d}
+                yAxisId="tx"
+                x={d}
+                stroke="#94a3b8"
+                strokeDasharray="4 4"
+                strokeOpacity={0.6}
+                label={{ value: d.slice(5), position: "top", fill: "#94a3b8", fontSize: 10 }}
+              />
+            ))}
             <Line
               yAxisId="tx"
               type="monotone"
@@ -78,6 +93,13 @@ export default function TrendChart({ rows }: { rows: DailyRow[] }) {
           </LineChart>
         </ResponsiveContainer>
       </div>
+      {marks.length > 0 && (
+        <p className="mt-2 text-xs text-slate-500">
+          Dashed lines mark days with unexplained spikes: the highest transaction
+          day (09-27), the highest distinct-signers day (10-04) and the jump in
+          signers (11-03). The causes are not verified.
+        </p>
+      )}
     </div>
   );
 }

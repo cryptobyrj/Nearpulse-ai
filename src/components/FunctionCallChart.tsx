@@ -6,6 +6,7 @@ import {
   Legend,
   Line,
   LineChart,
+  ReferenceLine,
   ResponsiveContainer,
   Tooltip,
   XAxis,
@@ -13,6 +14,8 @@ import {
 } from "recharts";
 import type { FunctionCallRow } from "@/lib/data";
 import RangeTabs, { type Range } from "./RangeTabs";
+
+const MARKS = ["2026-10-10", "2026-10-11", "2026-10-15"];
 
 export default function FunctionCallChart({ rows }: { rows: FunctionCallRow[] }) {
   const [range, setRange] = useState<Range>(91);
@@ -22,6 +25,7 @@ export default function FunctionCallChart({ rows }: { rows: FunctionCallRow[] })
   }
 
   const shown = rows.slice(-range);
+  const marks = MARKS.filter((d) => shown.some((r) => r.date === d));
 
   return (
     <div>
@@ -30,7 +34,7 @@ export default function FunctionCallChart({ rows }: { rows: FunctionCallRow[] })
       </div>
       <div className="h-80 w-full">
         <ResponsiveContainer width="100%" height="100%">
-          <LineChart data={shown} margin={{ top: 8, right: 16, left: 0, bottom: 0 }}>
+          <LineChart data={shown} margin={{ top: 22, right: 16, left: 0, bottom: 0 }}>
             <CartesianGrid stroke="#1e293b" strokeDasharray="3 3" />
             <XAxis dataKey="date" stroke="#64748b" fontSize={12} minTickGap={32} />
             <YAxis
@@ -54,6 +58,17 @@ export default function FunctionCallChart({ rows }: { rows: FunctionCallRow[] })
               formatter={(value) => Number(value).toLocaleString("en-US")}
             />
             <Legend />
+            {marks.map((d) => (
+              <ReferenceLine
+                key={d}
+                yAxisId="actions"
+                x={d}
+                stroke="#94a3b8"
+                strokeDasharray="4 4"
+                strokeOpacity={0.6}
+                label={{ value: d.slice(5), position: "top", fill: "#94a3b8", fontSize: 10 }}
+              />
+            ))}
             <Line
               yAxisId="actions"
               type="monotone"
@@ -77,6 +92,13 @@ export default function FunctionCallChart({ rows }: { rows: FunctionCallRow[] })
           </LineChart>
         </ResponsiveContainer>
       </div>
+      {marks.length > 0 && (
+        <p className="mt-2 text-xs text-slate-500">
+          Dashed lines mark the three largest function-call spikes (10-10, 10-11,
+          10-15). On each of those days one receiver account took the largest
+          share; why is not verified.
+        </p>
+      )}
     </div>
   );
 }

@@ -1,12 +1,20 @@
+import DayPicker from "@/components/DayPicker";
 import FunctionCallChart from "@/components/FunctionCallChart";
 import Reveal from "@/components/Reveal";
 import TrendChart from "@/components/TrendChart";
 import { dailyRows, functionCallRows, meta } from "@/lib/data";
 import { compareWindows, type Comparison } from "@/lib/metrics";
 import fcMeta from "../../../data/function_calls_meta.json";
+import spikeRows from "../../../data/spike_days_top5.json";
 
 function fmt(n: number) {
   return Math.round(n).toLocaleString("en-US");
+}
+
+function median(values: number[]) {
+  const s = [...values].sort((a, b) => a - b);
+  const mid = Math.floor(s.length / 2);
+  return s.length % 2 ? s[mid] : (s[mid - 1] + s[mid]) / 2;
 }
 
 function ComparisonCard({
@@ -59,6 +67,35 @@ function ComparisonCard({
 }
 
 export default function NetworkPulsePage() {
+  const fcByDate = new Map(functionCallRows.map((r) => [r.date, r]));
+  const days = dailyRows.map((r) => {
+    const f = fcByDate.get(r.date);
+    return {
+      date: r.date,
+      transactionCount: r.transactionCount,
+      distinctSigners: r.distinctSigners,
+      functionCallActions: f?.functionCallActions ?? 0,
+      distinctContracts: f?.distinctContracts ?? 0,
+      top5Calls: f?.top5Calls ?? 0,
+    };
+  });
+  const medians = {
+    transactionCount: median(days.map((d) => d.transactionCount)),
+    distinctSigners: median(days.map((d) => d.distinctSigners)),
+    functionCallActions: median(days.map((d) => d.functionCallActions)),
+    distinctContracts: median(days.map((d) => d.distinctContracts)),
+    top5Share: median(
+      days.map((d) =>
+        d.functionCallActions > 0 ? (d.top5Calls / d.functionCallActions) * 100 : 0
+      )
+    ),
+  };
+  const topAccounts = Object.fromEntries(
+    spikeRows
+      .filter((r) => r.rank === 1)
+      .map((r) => [r.date, { account: r.account, sharePct: r.sharePct }])
+  );
+
   return (
     <main className="mx-auto max-w-6xl px-4 py-10">
       <div className="space-y-10">
@@ -137,6 +174,19 @@ export default function NetworkPulsePage() {
               receiver accounts took most of the actions while the number of
               distinct contracts did not rise. The cause is not verified.
             </p>
+          </section>
+        </Reveal>
+
+        <Reveal>
+          <section className="glass p-5">
+            <h2 className="text-lg font-medium text-white">Explore a single day</h2>
+            <p className="mt-1 text-sm text-slate-400">
+              Pick any date in the snapshot to see its numbers next to the
+              91-day median.
+            </p>
+            <div className="mt-4">
+              <DayPicker days={days} medians={medians} topAccounts={topAccounts} />
+            </div>
           </section>
         </Reveal>
 
