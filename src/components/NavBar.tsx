@@ -96,12 +96,19 @@ export default function NavBar() {
         </ul>
 
         <div className="ml-auto flex items-center gap-3">
-          <div className="flex items-center gap-2 text-xs text-slate-400">
+          <a
+            href="https://docs.near.org/data-infrastructure/big-query"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Where this data comes from: NEAR BigQuery dataset docs"
+            className="flex items-center gap-2 text-xs text-slate-400 transition-colors hover:text-[#00ec97]"
+          >
             <span className="near-halo">
               <Image src="/near-logo.svg" alt="NEAR logo" width={22} height={22} />
             </span>
             <span className="hidden lg:inline">Built on NEAR data</span>
-          </div>
+            <span className="sr-only">(opens NEAR BigQuery docs in a new tab)</span>
+          </a>
           <button
             type="button"
             aria-label="Toggle menu"

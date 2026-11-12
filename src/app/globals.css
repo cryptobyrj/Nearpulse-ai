@@ -182,3 +182,32 @@ a.rounded-xl:hover {
   -webkit-mask-image: radial-gradient(220px circle at var(--mx, 50%) var(--my, 30%), #000 0%, transparent 100%);
   mask-image: radial-gradient(220px circle at var(--mx, 50%) var(--my, 30%), #000 0%, transparent 100%);
 }
+
+
+/* Hide the page-wide watermark. The NEAR mark now lives in the Overview hero. */
+body::after {
+  display: none;
+}
+.hero-mark {
+  position: absolute;
+  right: -2rem;
+  top: -1.5rem;
+  width: min(46vw, 380px);
+  aspect-ratio: 1;
+  background: url("/near-logo.svg") no-repeat center / contain;
+  opacity: 0.09;
+  pointer-events: none;
+  z-index: -1;
+  animation: watermarkFloat 22s ease-in-out infinite alternate;
+}
+@media (max-width: 767px) {
+  .hero-mark {
+    width: 54vw;
+    right: -1.5rem;
+    top: 0;
+    opacity: 0.07;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-mark { animation: none !important; }
+}

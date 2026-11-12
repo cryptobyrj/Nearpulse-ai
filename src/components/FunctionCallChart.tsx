@@ -66,7 +66,16 @@ export default function FunctionCallChart({ rows }: { rows: FunctionCallRow[] })
                 stroke="#94a3b8"
                 strokeDasharray="4 4"
                 strokeOpacity={0.6}
-                label={{ value: d.slice(5), position: "top", fill: "#94a3b8", fontSize: 10 }}
+                label={
+                  d === "2026-10-11"
+                    ? undefined
+                    : {
+                        value: d === "2026-10-10" ? "10-10 / 10-11" : d.slice(5),
+                        position: "top",
+                        fill: "#94a3b8",
+                        fontSize: 10,
+                      }
+                }
               />
             ))}
             <Line
