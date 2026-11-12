@@ -30,7 +30,8 @@ export default function OverviewPage() {
   return (
     <main className="mx-auto max-w-6xl px-4 py-12">
       <div className="space-y-14">
-        <section>
+          <section className="relative">
+          <div aria-hidden="true" className="hero-mark" />
           <p className="text-sm tracking-wide text-[#00ec97]">
             The intelligence layer for the NEAR ecosystem
           </p>
