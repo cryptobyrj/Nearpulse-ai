@@ -6,6 +6,8 @@ NEARPulse AI is an evidence-first analytics and research app built for NEAR Hack
 
 The data is a historical snapshot, not live data. No token price predictions are made.
 
+**Live app:** https://nearpulse-ai.vercel.app | **Thesis:** [THESIS.md](THESIS.md) | **X:** https://x.com/NEARPulseAI | **Track:** Investment Thesis, NEAR HACKATHON 2026
+
 ## Features
 
 - **Network Pulse**: daily transactions, distinct signers, function-call actions, 7-day and 30-day comparisons, charts.
