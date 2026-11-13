@@ -3,7 +3,7 @@ import Image from "next/image";
 const GITHUB = "https://github.com/cryptobyrj/Nearpulse-ai";
 const X_PROFILE = "https://x.com/NEARPulseAI";
 // After you publish the demo post, paste its link between the quotes.
-const DEMO_POST = "";
+const DEMO_POST = "https://x.com/NEARPulseAI/status/2121131118510719360";
 
 export default function Footer() {
   const links = [
